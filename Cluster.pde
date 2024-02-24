@@ -4,6 +4,10 @@ public class Cluster
 
     public Cluster(int len, int x, int y)
     {
-        // your code here
+      Tendril[] bob = new Tendril [NUM_STEMS];
+      for(int i = 0; i < bob.length; i++){
+        bob[i] = new Tendril(len, (2*PI*i/7), x, y);
+        bob[i].show();
+      }
     }
 }
