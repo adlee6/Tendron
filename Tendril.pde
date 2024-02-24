@@ -34,7 +34,7 @@ class Tendril
       tom.add(new Cluster(myNumSegments/3, (int)endX, (int)endY));
         else{
         fill(#FCC2F5);
-       ellipse((float)endX, (float)endY, 5,5);
+       ellipse((float)endX, (float)endY, 10,10);
         }
       }
     }
