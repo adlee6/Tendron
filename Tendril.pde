@@ -30,7 +30,7 @@ class Tendril
       myAngle += (Math.random()*0.4-0.2);
       if(i == myNumSegments-1){
        ArrayList <Cluster> tom = new ArrayList <Cluster>();
-        if(myNumSegments >= 3)
+        if(myNumSegments >= 10)
       tom.add(new Cluster(myNumSegments/3, (int)endX, (int)endY));
         else{
         fill(#FCC2F5);
