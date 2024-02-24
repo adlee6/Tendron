@@ -21,6 +21,7 @@ class Tendril
   {
     double startX = myX;
     double startY = myY;
+    ArrayList <Cluster> tom = new ArrayList <Cluster>();
     for(int i = 0; i < myNumSegments; i++) {
       double endX = startX + SEG_LENGTH*Math.cos(myAngle);
       double endY = startY + SEG_LENGTH*Math.sin(myAngle);
@@ -28,11 +29,11 @@ class Tendril
       startX = endX;
       startY = endY;
       myAngle += (Math.random()*0.4-0.2);
+      //ArrayList <Cluster> tom = new ArrayList <Cluster>();
       if(i == myNumSegments-1){
-       ArrayList <Cluster> tom = new ArrayList <Cluster>();
-        if(myNumSegments >= 10)
-      tom.add(new Cluster(myNumSegments/3, (int)endX, (int)endY));
-        else{
+        if(myNumSegments >= 10) {
+        tom.add(new Cluster(myNumSegments/3, (int)endX, (int)endY));
+         }else{
         fill(#FCC2F5);
        ellipse((float)endX, (float)endY, 10,10);
         }
